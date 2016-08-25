@@ -55,9 +55,11 @@ module Xeroizer
       datetime_utc  :created_date_utc, :api_name => 'CreatedDateUTC'
       string    :sales_tax_basis
       string    :sales_tax_period
+      string    :line_of_business
 
       has_many :addresses
       has_many :phones
+      has_many :external_links
 
       validates :sales_tax_basis, :message => "is not a valid option" do
         valid = true

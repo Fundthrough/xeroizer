@@ -9,6 +9,7 @@ module Xeroizer
           
       string :url
       string :description
+      string :link_type, :internal_name => :type
       
     end
     
